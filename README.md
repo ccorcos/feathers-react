@@ -42,11 +42,14 @@ An example app using Feathers + Webpack.
 - read about [Webpack](https://webpack.github.io/docs)
 - read about [React](https://facebook.github.io/react/docs)
 
-### Install the appropriate tools:
-
 ```js
-brew install node
 npm install -g webpack feathers-cli
+cd react/
+npm i
+cd ../feathers/
+npm i
+npm start
+open https://localhost:3030
 ```
 
 ## Features (Planned)
