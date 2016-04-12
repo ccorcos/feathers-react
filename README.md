@@ -1,11 +1,40 @@
-# Feathers + React
+# Feathers + Webpack
 
-An example app using Feathers + React.
+An example app using Feathers + Webpack.
 
 ## To Do
 
-- can't get webpack dev server to serve alongside feathers.
+- how to organize develop middleware?
+  - use NODE_ENV for dev middleware
+  - use PLATFORM to choose which dev middleware to use
 - build dist vs development
+- deploy with now.sh
+
+- multiple entry points
+- build and minify html through webpack
+
+- code linting
+- unit testing
+- code coverage
+- integration testing
+- functional testing
+- continuous integration
+
+- external services
+  - logging
+  - error reporting
+  - tracking
+  - email
+  - twilio
+- deploy
+  - multiple servers
+  - scaling databases
+  - migrating databases
+
+- webpack inline image blur
+- styleguide
+- react storybook
+- react native ios and android
 
 ## Getting Started
 
