@@ -3,7 +3,6 @@
 const handler = require('feathers-errors/handler');
 const notFound = require('./not-found-handler');
 const logger = require('./logger');
-const develop = require('./develop');
 
 module.exports = function() {
   // Add your custom middleware here. Remember, that
@@ -11,7 +10,11 @@ module.exports = function() {
   // handling middleware should go last.
   const app = this;
 
-  develop(app)
+  if (process.env.NODE_ENV === "development") {
+    // run webpack with hot module replacement in development
+    const development = require('./development');
+    development(app)
+  }
 
   app.use(notFound());
   app.use(logger(app));

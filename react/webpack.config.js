@@ -12,8 +12,22 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: "babel", exclude: /node_modules/, query: { presets: ['es2015', 'react', 'stage-0'] } },
-      { test: /\.(svg|png|jpe?g|gif|ttf|woff2?|eot)$/, loader: 'url?limit=8182' },
+      {
+        test: /\.js$/,
+        loader: "babel",
+        exclude: /node_modules/,
+        query: {
+          presets: [
+            'es2015',
+            'react', 
+            'stage-0'
+          ]
+        }
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif|ttf|woff2?|eot)$/,
+        loader: 'url?limit=8182'
+      },
     ]
   },
   resolve: {

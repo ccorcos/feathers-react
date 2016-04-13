@@ -2,11 +2,18 @@
 
 An example app using Feathers + Webpack.
 
+## Getting Started
+
+```sh
+cd react
+npm i
+cd ../feathers/
+npm i
+NODE_ENV=development PLATFORM=react npm start
+```
+
 ## To Do
 
-- how to organize develop middleware?
-  - use NODE_ENV for dev middleware
-  - use PLATFORM to choose which dev middleware to use
 - build dist vs development
 - deploy with now.sh
 
