@@ -12,7 +12,7 @@ module.exports = function() {
 
   if (process.env.NODE_ENV === "development") {
     // run webpack with hot module replacement in development
-    const development = require('./development');
+    const development = require('../../../react/middleware');
     development(app)
   }
 

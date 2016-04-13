@@ -19,6 +19,9 @@
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.6.0"
   }
 }

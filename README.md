@@ -9,16 +9,26 @@ cd react
 npm i
 cd ../feathers/
 npm i
-NODE_ENV=development PLATFORM=react npm start
+NODE_ENV=development npm start
+```
+
+build and run without webpack
+
+```sh
+cd react
+webpack -p --config webpack.config.js
+cd ../feathers
+npm start
 ```
 
 ## To Do
 
-- build dist vs development
 - deploy with now.sh
 
-- multiple entry points
-- build and minify html through webpack
+- webpack
+  - build and minify html
+  - caching policy with hash
+  - multiple entry points
 
 - code linting
 - unit testing

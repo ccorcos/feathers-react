@@ -1,13 +1,9 @@
-var webpack = require("webpack")
+const webpack = require("webpack")
 
-module.exports = {
-  devtool: 'source-map',
-  entry: [
-    'webpack-hot-middleware/client',
-    'src/index.js'
-  ],
+const config = {
+  entry: 'src/index.js',
   output: {
-    path: '/',
+    path: '../feathers/public',
     filename: "bundle.js",
   },
   module: {
@@ -37,7 +33,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
   ]
 }
+
+if (process.env.NODE_ENV === "development") {
+  config.entry = ['webpack-hot-middleware/client', config.entry]
+  config.plugins.push(new webpack.HotModuleReplacementPlugin())
+  config.output.path = '/'
+  config.devtool = 'source-map'
+}
+
+module.exports = config
