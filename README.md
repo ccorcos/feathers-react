@@ -30,6 +30,9 @@ npm start
   - caching policy with hash
   - multiple entry points
 
+- how to separate webpack dependencies from feathers
+- how to do common linting between projects
+
 - code linting
 - unit testing
 - code coverage
